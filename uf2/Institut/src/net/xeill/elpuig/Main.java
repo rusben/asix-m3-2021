@@ -3,8 +3,6 @@ package net.xeill.elpuig;
 class Main {
   public static void main(String[] args) {
 
-    //System.out.println("Hello, this is an Institut.");
-
     Institut elpuig = new Institut();
     elpuig.loadFakeData();
 
@@ -24,15 +22,14 @@ class Main {
         case 2:
           elpuig.addStudent();
           break;
-        case 3: break;
-        case 4: break;
+        case 3:
+          elpuig.updateStudent();
+          break;
+        case 4:
+          elpuig.deleteStudent();
+          break;
         default: break;
       }
-
     }
   }
-
 }
-
-// Muestra los estudiantes del Instituto elpuig
-//  elpuig.showStudents();

@@ -1,5 +1,4 @@
 package net.xeill.elpuig;
-
 import java.util.Scanner;
 
 class Menu {
@@ -32,8 +31,4 @@ class Menu {
   void cls() {
     System.out.print("\033\143");
   }
-
-
-
-
 }
