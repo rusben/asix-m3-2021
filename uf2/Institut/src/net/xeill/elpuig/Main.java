@@ -3,29 +3,36 @@ package net.xeill.elpuig;
 class Main {
   public static void main(String[] args) {
 
-    System.out.println("Hello, this is an Institut.");
+    //System.out.println("Hello, this is an Institut.");
 
     Institut elpuig = new Institut();
+    elpuig.loadFakeData();
 
-    Student husnain = new Student();
-    husnain.name = "Husnain Naeem";
-    husnain.age = 20;
-    husnain.address = "Fondo s/n";
+    Menu menu = new Menu();
 
-    elpuig.students.add(husnain);
+    while (true) {
+      // Muestra el menú
+      menu.showMainMenu();
+      // Retorna la opción elegida en el menú
+      int option = menu.getMainMenu();
+      System.out.println(option);
 
-    Student usman = new Student();
-    usman.name = "Usman Munawar";
-    usman.age = 22;
-    usman.address = "Santa Coloma s/n";
+      switch (option) {
+        case 1:
+          elpuig.showStudents();
+          break;
+        case 2:
+          elpuig.addStudent();
+          break;
+        case 3: break;
+        case 4: break;
+        default: break;
+      }
 
-    elpuig.students.add(usman);
-
-    // Muestra los estudiantes del Instituto elpuig
-    elpuig.showStudents();
-
-
-
+    }
   }
 
 }
+
+// Muestra los estudiantes del Instituto elpuig
+//  elpuig.showStudents();
