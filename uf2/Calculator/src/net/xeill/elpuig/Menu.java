@@ -38,5 +38,23 @@ class Menu {
     System.out.print("\033\143");
   }
 
+  public void showOperator() {
+    System.out.println("Insert an operator:");
+  }
+
+  public int getOperator() {
+    String soperator;
+    int operator;
+    try {
+      soperator = input.nextLine();
+      operator = Integer.parseInt(soperator);
+    } catch (Exception e) {
+      cls();
+      showOperator();
+      return getOperator();
+    }
+
+    return operator;
+  }
 
 }
