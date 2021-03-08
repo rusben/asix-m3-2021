@@ -5,20 +5,43 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
 
+    Scanner scanner = new Scanner(System.in);
     Account a = new Account("Husnain", 5000);
-    a.showBalance();
+    Menu m = new Menu();
 
-    a.makeDeposit(500);
 
-    a.showBalance();
+    while (true) {
 
-    a.withdraw(7000);
+     m.mainMenu();
 
-    a.showBalance();
+     int money = 0;
+     int option = m.getMainMenu();
 
-    a.withdraw(5000);
+     switch(option) {
+       case 1: a.showBalance();
+        break;
 
-    a.showBalance();
+       case 2:
+          System.out.println("----- ----- Retirar dinero ----- -----");
+          System.out.println("Introduzca la cantidad de dinero que queire retirar.");
+          money = scanner.nextInt();
+          a.withdraw(money);
+
+        break;
+       case 3:
+          System.out.println("----- ----- Ingresar dinero ----- -----");
+          System.out.println("Introduzca la cantidad de dinero que queire ingresar.");
+          money = scanner.nextInt();
+          a.makeDeposit(money);
+
+        break;
+
+      case 4:
+           System.exit(0);
+           break;
+      default: break;
+     }
+   }
 
   }
 }
