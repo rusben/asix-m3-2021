@@ -23,19 +23,14 @@ public class Main {
           break;
         case 2: a.anadirContacto();
           break;
-        case 3: System.exit(0);
+        case 3: a.modificarContacto();
+          break;
+          case 4: System.exit(0);
           break;
         default:
           break;
 
       }
-
-
     }
-
-
-
-
   }
-
 }

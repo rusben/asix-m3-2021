@@ -12,7 +12,8 @@ public class Menu {
     System.out.println("---------- ---------- ---------- ----------");
     System.out.println("1. Mostrar contactos");
     System.out.println("2. Agregar un contacto");
-    System.out.println("3. Salir");
+    System.out.println("3. Modificar un contacto");
+    System.out.println("4. Salir");
 
   }
 
@@ -33,4 +34,7 @@ public class Menu {
 
   }
 
+  void cls() {
+    System.out.print("\033\143");
+  }
 }
