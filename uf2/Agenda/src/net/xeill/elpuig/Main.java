@@ -25,7 +25,9 @@ public class Main {
           break;
         case 3: a.modificarContacto();
           break;
-          case 4: System.exit(0);
+          case 4:a.eliminarContacto();
+          break;
+          case 5: System.exit(0);
           break;
         default:
           break;

@@ -8,19 +8,27 @@ public class Agenda {
 
   // Atributos
   ArrayList<Contacto> contactos = new ArrayList<Contacto>();
+  Scanner escaneo = new Scanner(System.in);
 
   // Métodos
   public void mostrarContactos() {
 
-    for (Contacto c : contactos) {
+    if(contactos.size()!=0){
+      for (Contacto c : contactos) {
 
-      System.out.println(c.name);
-      System.out.println(c.number);
-      System.out.println(c.email);
-      System.out.println(c.edad);
-      System.out.println("----------");
+        System.out.println(c.name);
+        System.out.println(c.number);
+        System.out.println(c.email);
+        System.out.println(c.edad);
+        System.out.println("----------");
 
     }
+
+
+  }else {
+    System.out.println("No hay contactos para mostrar.");
+
+  }
 
   }
 
@@ -42,7 +50,6 @@ public class Agenda {
   }
 
   public void modificarContacto(){
-  	Scanner escaneo = new Scanner(System.in);
   	  // Mostrar los contactos con un índice delante
   System.out.println("modificar contacto");
     // El usuario indica el índice del elemento que quiere modificar
@@ -95,6 +102,39 @@ public class Agenda {
         c.edad = nuevoEdad;
       }
     // Preguntamos al usuario los nuevos valores del contacto
+
+  }
+
+
+  public void eliminarContacto(){
+
+    System.out.println("Mostrando los contactos");
+    mostrarContactosConIndice();
+
+        System.out.println("Indica el indice de contacto que quiera Eliminar");
+
+        int indice = escaneo.nextInt();
+        escaneo.nextLine();
+     Contacto c = contactos.get(indice);
+     System.out.println(c);
+
+     System.out.println("Estas seguro que quieres eliminar el contacto?? Esta opcion no se podra deshacer. (si|no)");
+     String eliminarContacto = escaneo.nextLine();
+
+     if (eliminarContacto.equals("si")) {
+
+       contactos.remove(indice);
+       System.out.println("El Contacto se ha eliminado correctamente.");
+
+     }
+
+
+
+
+
+
+
+
 
   }
 

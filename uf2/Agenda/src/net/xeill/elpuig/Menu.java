@@ -13,7 +13,8 @@ public class Menu {
     System.out.println("1. Mostrar contactos");
     System.out.println("2. Agregar un contacto");
     System.out.println("3. Modificar un contacto");
-    System.out.println("4. Salir");
+    System.out.println("4. Eliminar un contacto");
+    System.out.println("5. Salir");
 
   }
 
