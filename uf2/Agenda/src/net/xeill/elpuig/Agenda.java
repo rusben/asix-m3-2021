@@ -56,13 +56,25 @@ public class Agenda {
     System.out.println("Mostrando contactos...");
     mostrarContactosConIndice();
 
-        System.out.println("Indica el indice de contacto que quiera modificar");
+    System.out.println("Indica el indice de contacto que quiera modificar");
 
-        int indice = escaneo.nextInt();
-        escaneo.nextLine();
+    boolean indiceCorrecto = false;
+    int indice = 0;
+
+    while (indiceCorrecto == false) {
+      // Pediremos un string y lo parsearemos a int
+      try {
+        String sindice = escaneo.nextLine();
+        indice = Integer.parseInt(sindice);
+        indiceCorrecto = true;
+      } catch(Exception e) {
+        indiceCorrecto = false;
+        System.out.println("El valor introducido no es válido, introduzca un nuevo valor entero.");
+      }
+    }
+
      Contacto c = contactos.get(indice);
      System.out.println(c);
-
 
     // Modificamos el contacto c
 
