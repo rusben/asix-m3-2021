@@ -1,3 +1,5 @@
+package net.xeill.elpuig;
+
 import java.util.ArrayList;
 import java.io.BufferedWriter;
 import java.io.BufferedReader;
@@ -63,13 +65,39 @@ class CosaMaker {
     }
   }
 
+  public void nuevaCosa() {
+
+  }
+
   public static void main(String[] args) {
 
     CosaMaker cm = new CosaMaker();
+    Menu m = new Menu();
 
-    cm.cargarCosas();
-    cm.imprimirCosas();
+    while (true) {
 
+      m.showMainMenu();
+      int option = m.getMainMenu();
+
+      switch (option) {
+
+        case 1: cm.cargarCosas();
+          break;
+        case 2: cm.nuevaCosa();
+          break;
+        case 3: cm.imprimirCosas();
+          break;
+        case 4: cm.guardarCosas();
+          break;
+        case 5:
+          System.out.println("BYE!");
+          System.exit(0);
+          break;
+        default:
+          break;
+      }
+
+    }
   }
 
 }

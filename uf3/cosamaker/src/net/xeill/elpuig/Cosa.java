@@ -1,3 +1,5 @@
+package net.xeill.elpuig;
+
 class Cosa {
 
   String nombre;
