@@ -8,6 +8,16 @@ class Cosa {
   int anchura;
   boolean tangible;
 
+  Cosa() { }
+
+  Cosa(String nombre, String color, int altura, int anchura, boolean tangible) {
+    this.nombre = nombre;
+    this.color = color;
+    this.altura = altura;
+    this.anchura = anchura;
+    this.tangible = tangible;
+  }
+
   public String toString() {
       String s = "";
       s+=nombre;

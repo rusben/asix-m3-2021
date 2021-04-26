@@ -1,6 +1,7 @@
 package net.xeill.elpuig;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.FileWriter;
@@ -9,6 +10,7 @@ import java.io.File;
 
 class CosaMaker {
 
+  Scanner input = new Scanner(System.in);
   ArrayList<Cosa> cosas = new ArrayList<Cosa>();
 
   public void cargarCosas() {
@@ -66,6 +68,21 @@ class CosaMaker {
   }
 
   public void nuevaCosa() {
+
+    System.out.println("Introduce el nombre de la cosa:\n");
+    String nombre = input.nextLine();
+    System.out.println("Introduce el color de la cosa:\n");
+    String color = input.nextLine();
+    System.out.println("Introduce la altura de la cosa:\n");
+    int altura = input.nextInt();
+    System.out.println("Introduce la anchura de la cosa:\n");
+    int anchura = input.nextInt();
+    System.out.println("Es una cosa tangible (true/false)\n");
+    boolean tangible = input.nextBoolean();
+
+    Cosa c = new Cosa(nombre, color, altura, anchura, tangible);
+
+    cosas.add(c);
 
   }
 
