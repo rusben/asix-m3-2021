@@ -3,8 +3,8 @@ package net.xeill.elpuig;
 class Atleta {
 
   int distanciaRecorrida; // m
-  int velocidadX; // m/s
-  int velocidadY; // m/s
+  float velocidadX; // m/s
+  float velocidadY; // m/s
   int elevacion; // m
   int carril;
 
@@ -16,5 +16,26 @@ class Atleta {
     this.elevacion = 0;
   }
 
-  
+  void correr(float numeroDecimal) {
+    this.velocidadX = numeroDecimal;
+  }
+
+  void saltar(float numeroDecimal) {
+    if (this.elevacion == 0) {
+      this.velocidadY = numeroDecimal;
+    }
+  }
+
+  public String toString() {
+    String s = "";
+
+    s+= "Carril: " + this.carril + "\n";
+    s+= "Distancia: " + this.distanciaRecorrida + "\n";
+    s+= "Vx: " + this.velocidadX + "\n";
+    s+= "Vy: " + this.velocidadY + "\n";
+    s+= "Elevación: " + this.elevacion + "\n";
+
+    return s;
+  }
+
 }

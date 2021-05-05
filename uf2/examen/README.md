@@ -1,7 +1,6 @@
 Examen UF2
 ==
 
-
 **1. (1 Punto) Implementa la clase Atleta, debe contener los siguientes atributos:**
 * Distancia recorrida actual
 * Velocidad actual (horizontal y vertical)
@@ -20,7 +19,7 @@ Define un método constructor que permita establecer el carril.
 
 `En el main:` Utiliza ambos métodos con diferentes atletas.
 
-**3. Crea las clases Valla, Carril y Pista.**
+**3. (2 Puntos) Crea las clases Valla, Carril y Pista.**
 
 * La clase `Valla` debe contener campos de posición y altura (todas las vallas de una pista tendrán la misma altura), y otro campo para indicar si la valla está en pie o no.
 
@@ -32,7 +31,7 @@ Añade un constructor para definir la posición de la valla. El constructor debe
 
 `En el main:` Crea un objeto de la clase `Pista` que contenga los ocho carriles con las diez vallas por carril.
 
-**4. Añade más métodos:**
+**4. (2 Puntos) Añade más métodos:**
 
 * Crea un método `choca()` en la clase `Atleta` que reciba un objeto de la clase `Valla` y retorne si el atleta ha chocado con dicha valla (hay que comprobar si el taleta está en la misma posición que la valla y si la elevación del atleta es mayor que la altura de la valla).
 

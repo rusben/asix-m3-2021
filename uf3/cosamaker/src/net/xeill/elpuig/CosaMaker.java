@@ -33,6 +33,8 @@ class CosaMaker {
             this.cosas.add(c);
       }
 
+      System.out.println("Datos cargados con éxito.\n");
+
     } catch (Exception e) {
       System.out.println(e.getMessage());
     }
@@ -54,6 +56,8 @@ class CosaMaker {
        }
 
        outputStream.close();
+
+       System.out.println("Datos guardados con éxito.\n");
 
      } catch (Exception e) {
        System.out.println(e.getMessage());
@@ -83,6 +87,8 @@ class CosaMaker {
     Cosa c = new Cosa(nombre, color, altura, anchura, tangible);
 
     cosas.add(c);
+
+    System.out.println("Datos introducidos con éxito.\n");
 
   }
 
