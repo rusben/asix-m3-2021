@@ -33,7 +33,7 @@ Añade un constructor para definir la posición de la valla. El constructor debe
 
 **4. (2 Puntos) Añade más métodos:**
 
-* Crea un método `choca()` en la clase `Atleta` que reciba un objeto de la clase `Valla` y retorne si el atleta ha chocado con dicha valla (hay que comprobar si el taleta está en la misma posición que la valla y si la elevación del atleta es mayor que la altura de la valla).
+* Crea un método `choca()` en la clase `Atleta` que reciba un objeto de la clase `Valla` y retorne si el atleta ha chocado con dicha valla (hay que comprobar si el atleta está en la misma posición que la valla y si la elevación del atleta es mayor que la altura de la valla).
 
 * Crea un método `tirar()` en la clase `Valla` que establezca que la valla no está en pie.
 
