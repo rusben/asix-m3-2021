@@ -37,6 +37,6 @@ Añade un constructor para definir la posición de la valla. El constructor debe
 
 * Crea un método `tirar()` en la clase `Valla` que establezca que la valla no está en pie.
 
-* Crea un método `frenar()` en la clase `Atleta` número decimal como parámetro y reste dicho valor a la velocidad horizontal del atleta.reste
+* Crea un método `frenar()` en la clase `Atleta` número decimal como parámetro y reste dicho valor a la velocidad horizontal del atleta.
 
-`En el main:` Utiliza estos tres métodos para comprobar si alguno de los ocho atletas choca con alguna de las vayas qye hay en su carril. En caso de que choque, tira la valla y frena al atleta.
+`En el main:` Utiliza estos tres métodos para comprobar si alguno de los ocho atletas choca con alguna de las vayas que hay en su carril. En caso de que choque, tira la valla y frena al atleta.

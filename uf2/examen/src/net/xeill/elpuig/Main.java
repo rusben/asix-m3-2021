@@ -29,5 +29,10 @@ class Main {
 
     System.out.println("----------------------------------------");
 
+    System.out.println("Crear una pista:");
+
+    Pista p = new Pista();
+    
+
   }
 }
