@@ -15,4 +15,5 @@ class Valla {
   void tirar() {
     this.enPie = false;
   }
+  
 }

@@ -26,6 +26,18 @@ class Atleta {
     }
   }
 
+  boolean choca(Valla v) {
+    if (this.distanciaRecorrida == v.posicion && this.elevacion <= v.altura)
+      return true;
+    else
+      return false;
+  }
+
+  void frenar(float numeroDecimal) {
+    this.velocidadX -= numeroDecimal;
+    if (this.velocidadX < 0) this.velocidadX = 0;
+  }
+
   public String toString() {
     String s = "";
 
